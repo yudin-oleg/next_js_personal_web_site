@@ -1,0 +1,126 @@
+.mainContainer {
+	height: fit-content;
+}
+.header {
+	display: flex;
+	padding-top: 60px;
+	padding-left: 163px;
+}
+.header a {
+	text-decoration: none;
+}
+/* .logo img {
+	height: 57px;
+	width: 43.5px;
+} */
+.navigation {
+	display: flex;
+	margin-top: 12px;
+	margin-left: 468px;
+	margin-right: 240px;
+	height: 36px;
+	width: 379px;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 36px;
+	letter-spacing: -0.03em;
+	text-align: center;
+}
+.navigation p {
+	cursor: pointer;
+	color: #3f556a;
+}
+.socialMedia {
+	width: 128px;
+	height: 33px;
+	/* max-margin-right: 230px; */
+	margin-top: 12px;
+	display: flex;
+	justify-content: space-between;
+}
+.socialMedia Image {
+	cursor: pointer;
+}
+.languages {
+	display: flex;
+	justify-content: space-between;
+	height: 36px;
+	width: 77px;
+	margin-top: 12px;
+	margin-left: 10px;
+}
+.languages a {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 36px;
+	letter-spacing: -0.03em;
+	text-align: center;
+	color: #3f556a;
+}
+/* .languages a + a > {
+	margin-left: 5px;
+} */
+.blueText {
+	color: #3a6fe8;
+}
+.homePartAccentWord {
+	margin-top: 28px;
+	font-size: 64px;
+	font-weight: 600;
+	line-height: 36px;
+	letter-spacing: -0.02em;
+	text-align: left;
+}
+.homePart {
+	display: flex;
+	margin-top: 33px;
+	margin-left: 224px;
+	height: 100%;
+}
+.photo Image {
+	height: 540px;
+	width: 320px;
+	z-index: 10;
+}
+.homePartText {
+	margin-top: 82px;
+	margin-left: 187px;
+	max-width: 681px;
+	height: fit-content;
+	font-size: 66px;
+	font-weight: 600;
+	line-height: 60px;
+	letter-spacing: -0.02em;
+	text-align: left;
+	color: #001f3d;
+}
+.adviserInfo {
+	width: fit-content;
+	height: 68px;
+	margin-top: 50px;
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 34px;
+	letter-spacing: -0.02em;
+	text-align: left;
+}
+.photo {
+	position: relative;
+	height: 100%;
+	display: flex;
+	align-items: end;
+}
+.blueBackground {
+	position: absolute;
+	width: 547px;
+	height: 547px;
+	top: 296px;
+	left: 196px;
+	gap: 0px;
+	opacity: 0px;
+	background-color: #b3c8f9;
+	z-index: 5;
+}
