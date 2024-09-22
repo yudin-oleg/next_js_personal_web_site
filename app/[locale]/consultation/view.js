@@ -1,10 +1,17 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./consultation.module.css";
 import { useRef, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useTranslation } from "react-i18next";
+import LanguageChangerConsultation from "@/components/LanguageChangerConsultation";
 
-export default function Consultation() {
+export function View() {
+	const { t } = useTranslation();
+	const router = useRouter();
+
 	const popUpButton = useRef(null);
 	const popUp = useRef(null);
 	const name = useRef(null);
@@ -31,7 +38,7 @@ export default function Consultation() {
 					"Content-Type": "application/json",
 				},
 				body: JSON.stringify({
-					to: "yudin_123@mail.ru", // Replace with recipient's email
+					to: "advisor@silverwind.pro", // Replace with recipient's email
 					subject: "Запрос на консультацию",
 					text:
 						"Имя: " +
@@ -83,7 +90,7 @@ export default function Consultation() {
 						<div className={styles.popUpBody}>
 							<div className={styles.message}>
 								<Image src="/pop-up.svg" alt="pop-up" width="64" height="64" />
-								<div>Спасибо! Данные успешно отправлены</div>
+								<div>{t("okay")}</div>
 							</div>
 						</div>
 					</div>
@@ -95,7 +102,7 @@ export default function Consultation() {
 						<div className={styles.popUpBody}>
 							<div className={styles.message}>
 								{/* <Image src="/pop-up.svg" alt="pop-up" width="64" height="64" /> */}
-								<div>Пожалуйста введите имя и телефон</div>
+								<div>{t("mistake")}</div>
 							</div>
 						</div>
 					</div>
@@ -115,13 +122,13 @@ export default function Consultation() {
 					</div>
 					<div className={styles.navigation}>
 						<Link href="/about">
-							<p>Обо мне</p>
+							<p>{t("aboutMe")}</p>
 						</Link>
 						<Link href="/deals">
-							<p>Деятельность</p>
+							<p>{t("myDeals")}</p>
 						</Link>
 						<Link href="/consultation">
-							<p>Консультация</p>
+							<p>{t("consultation")}</p>
 						</Link>
 					</div>
 					<div className={styles.socialMedia}>
@@ -145,22 +152,16 @@ export default function Consultation() {
 							<Image src="/t-consultation.svg" alt="t" width="35" height="35" />
 						</Link>
 					</div>
-					<div className={styles.languages}>
-						<a href="./about-ru.html">RU</a>
-						<a href="./about-en.html">EN</a>
-						<a href="./about-id.html">ID</a>
-					</div>
+					<LanguageChangerConsultation></LanguageChangerConsultation>
 				</div>
 				<div className={styles.consultationPart}>
-					<div className={styles.consultationMessage}>
-						Стоимость консультации в 2024 году 5000$
-					</div>
+					<div className={styles.consultationMessage}>{t("price")}</div>
 					<div className={styles.consultationForm}>
-						<input type="text" placeholder="Имя" ref={name} />
-						<input type="text" placeholder="Телефон" ref={phone} />
-						<input type="text" placeholder="Комментарий" ref={comment} />
+						<input type="text" placeholder={t("name")} ref={name} />
+						<input type="text" placeholder={t("phone")} ref={phone} />
+						<input type="text" placeholder={t("comment")} ref={comment} />
 						<button ref={popUpButton} onClick={processClick}>
-							Записаться
+							{t("register")}
 						</button>
 					</div>
 				</div>
