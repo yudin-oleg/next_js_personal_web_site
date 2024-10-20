@@ -25,5 +25,22 @@
 	"comment": "Comments",
 	"register": "Register",
 	"okay": "Thank you!\r\nData sent successfully",
-	"mistake": "Please enter your name and phone number"
+	"mistake": "Please enter your name and phone number",
+	"dealsIntro": "I am engaged in giving advice or, in modern terms, advising people.",
+	"myField": "The area of ​​my knowledge is human consciousness, so the areas of work are vast and blurred, because a person is manifested everywhere.",
+	"mainSpheres": "Main spheres:",
+	"buisness": "— Entrepreneurship",
+	"management": "— Management and leadership",
+	"services": "— Promotion of goods/services/enterprises",
+	"selfImprovement": "— Self-improvement",
+	"teamBuilding": "— Debugging interactions within the enterprise",
+	"soOn": "And so on, wherever there are people, there is something to work with.",
+	"prepare": "If you decide to work with me, get ready for questions, some of which, and maybe even the most of them, will be unpleasant, painful. Perhaps you won’t wish to tell the truth, etc., but you will have to answer — just because that’s life.",
+	"dante": "Seven hundred years ago, Dante described that the path to paradise runs through  suffering and pain.",
+	"firstLink": "https://facebook.com/maksim.tiaglov",
+	"firstImage": "/facebook.svg",
+	"secondLink": "https://www.instagram.com/tmaks.pro",
+	"secondImage": "/instagram.svg",
+	"thirdLink": "https://www.linkedin.com/in/tmakspro",
+	"thirdImage": "/linkedin.svg"
 }

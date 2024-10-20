@@ -32,14 +32,19 @@ export function View() {
 					</Link>
 				</div>
 				<div className={styles.socialMedia}>
-					<Link href="https://vk.com/maksim.tiaglov">
-						<Image src="/vk.svg" alt="vk" width="35" height="35" />
+					<Link href={t("firstLink")}>
+						<Image src={t("firstImage")} alt="vk" width="35" height="35" />
 					</Link>
-					<Link href="https://t.me/advisingbot">
-						<Image src="/tg.svg" alt="telegram" width="35" height="35" />
+					<Link href={t("secondLink")}>
+						<Image
+							src={t("secondImage")}
+							alt="telegram"
+							width="35"
+							height="35"
+						/>
 					</Link>
-					<Link href="https://tenchat.ru/tmaks">
-						<Image src="/t.svg" alt="t" width="35" height="35" />
+					<Link href={t("thirdLink")}>
+						<Image src={t("thirdImage")} alt="t" width="35" height="35" />
 					</Link>
 				</div>
 				{/* Language Switcher */}

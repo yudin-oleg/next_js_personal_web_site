@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./about.module.css";
+import styles from "./deals.module.css";
 import clsx from "clsx";
 import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
@@ -49,38 +49,39 @@ export function View() {
 				</div>
 				<LanguageChanger></LanguageChanger>
 			</div>
-			<div className={styles.aboutPart}>
-				<div className={styles.aboutPartText}>
-					<p className={clsx(styles.greeting, styles.blueText)}>
-						{t("greeting")}
-					</p>
-					<p className={styles.greetingMessage}>{t("youWished")}</p>
+			<div className={styles.dealsPart}>
+				<div className={styles.dealsPartText}>
 					<p className={styles.paragraph}>
-						{t("myNameIs")}
-						<span className={styles.blueText}>{t("iAm")}</span>
+						<span className={styles.blueText}>{t("dealsIntro")}</span>
 					</p>
+					<p className={styles.paragraph}>{t("myField")}</p>
 					<p className={styles.paragraph}>
-						{t("whatIDo")}
-						<span className={styles.blueText}>{t("myCompany")}</span>
-					</p>
-					<p className={styles.paragraph}>{t("reading")}</p>
-					<p className={styles.paragraph}>
-						{t("notWritingBok")}
+						<span className={styles.blueText}>
+							{t("mainSpheres")}
+							<br></br>
+						</span>
+						{t("buisness")}
 						<br></br>
-						{t("followers")}
+						{t("management")}
 						<br></br>
-						{t("martialArts")}
+						{t("services")}
+						<br></br>
+						{t("selfImprovement")}
+						<br></br>
+						{t("teamBuilding")}
+						<br></br>
 					</p>
+					<p className={styles.paragraph}>{t("soOn")}</p>
 					<p className={styles.paragraph}>
-						{t("whatILove")}
-						<br></br>
-						<span className={styles.blueText}>{t("perfection")}</span>
+						<span className={styles.blueText}>
+							{t("prepare")}
+							<br></br>
+						</span>
 					</p>
-					<p className={styles.paragraph}>{t("niceToMeet")}</p>
-					<p className={styles.paragraph}>М.</p>
+					<p className={styles.paragraph}>{t("dante")}</p>
 				</div>
-				<div className={styles.photo}>
-					<Image src="/about-photo.png" alt="photo" width="420" height="560" />
+				<div className={styles.dealsLogo}>
+					<Image src="/deals-logo.svg" alt="logo" width="301" height="414" />
 				</div>
 			</div>
 		</div>
